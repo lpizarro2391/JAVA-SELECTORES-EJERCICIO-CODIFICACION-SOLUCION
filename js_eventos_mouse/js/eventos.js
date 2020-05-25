@@ -4,5 +4,9 @@ function cambioFotoAstronauta(){
 
 
 function cambioFotoExtraterrestre(){
-    document.getElementById('Extraterrestre').style="webkit-filter:blur(5px);filter:blur(5px);"
+    document.getElementById('Extraterrestre').style="-webkit-filter:blur(5px);filter:blur(5px);"
+}
+
+function cambioFotoPlanetas(){
+    document.getElementById('planetas').style="filter:hue-rotate(90deg);-webkit-filter: hue-rotate(90deg);";
 }
