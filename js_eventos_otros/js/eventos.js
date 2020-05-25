@@ -1,4 +1,4 @@
-function cambiarRadioButton(){
+function cambiarRadioButtons(){
     var estadoRB=document.getElementById('activar_rb').checked; 
     if(estadoRB){
         var estado = "true"
@@ -11,3 +11,9 @@ function cambiarRadioButton(){
         document.getElementById('musica').disable = true
     }
 }
+
+function cargarPagina(){
+    alert('Se ha cargado la página')
+}
+
+document.getElementsByTagName('body')[0].onload = cargarPagina;
