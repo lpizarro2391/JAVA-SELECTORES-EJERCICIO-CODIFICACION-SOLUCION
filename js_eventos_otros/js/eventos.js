@@ -17,3 +17,4 @@ function cargarPagina(){
 }
 
 document.getElementsByTagName('body')[0].onload = cargarPagina;
+
