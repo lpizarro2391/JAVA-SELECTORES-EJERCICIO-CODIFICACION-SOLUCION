@@ -13,3 +13,10 @@ function cambiarTituloVerde(){
 function cambiarTituloNegro() {
     document.querySelector("#tarjeta_cambia_color.card - image span").className = "card-title black"
 }
+
+
+function teclaTextBox(event){
+    var tecla = event.which || event.keyCode;
+    document.querySelector('#tarjeta_presiona_input_text  .card-action a').innerHTML="Presionaste:"
+    +String.fromCharCode(tecla)
+}
