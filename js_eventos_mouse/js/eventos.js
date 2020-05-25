@@ -8,5 +8,10 @@ function cambioFotoExtraterrestre(){
 }
 
 function cambioFotoPlanetas(){
-    document.getElementById('planetas').style="filter:hue-rotate(90deg);-webkit-filter: hue-rotate(90deg);";
+    document.getElementById('planetas').style="filter:hue-rotate(90deg);-webkit-filter: hue-rotate(90deg);"
+}
+
+
+function cambioFotoNave(){
+    document.getElementById('nave_espacial').style="filter: sepia(100%);-webkit-filter:sepia(100%);"
 }
