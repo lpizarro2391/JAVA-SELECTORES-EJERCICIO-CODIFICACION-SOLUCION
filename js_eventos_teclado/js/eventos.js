@@ -3,3 +3,13 @@ function mostrar_tecla(event){
     document.querySelector("#tarjeta_muestra_tecla #texto_tarjeta")
         .innerHTML="Presionaste la tecla: "+String.fromCharCode(tecla);
 }
+
+
+function cambiarTituloVerde(){
+    document.querySelector("#tarjeta_cambia_color .card-image span").className="card-title green"
+}
+
+
+function cambiarTituloNegro() {
+    document.querySelector("#tarjeta_cambia_color.card - image span").className = "card-title black"
+}
