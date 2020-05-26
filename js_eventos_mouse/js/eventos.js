@@ -32,12 +32,23 @@ function eventoOnFocus(event){
             $(document).ready(function () { $('select').material_select() })
             break;
         default:
-        
-
-
-
-
-
-
+    }
+}
+function eventoOnBlur(event) {
+    var seleccion = event.currentTarget.id;
+    switch (seleccion){
+        case "animales":
+            document.getElementById('sel_animales').disable = true
+            $(document).ready(function () { $('select').material_select() })
+            break
+        case "postres":
+            document.getElementById('sel_postres').disable = true
+            $(document).ready(function () { $('select').material_select() })
+            break
+        case "musica":
+            document.getElementById('sel_musica').disable = true
+            $(document).ready(function () { $('select').material_select() })
+            break
+        default:
     }
 }
