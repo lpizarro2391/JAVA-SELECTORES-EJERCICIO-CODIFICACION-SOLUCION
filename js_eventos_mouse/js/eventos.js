@@ -34,6 +34,8 @@ function eventoOnFocus(event){
         default:
     }
 }
+
+
 function eventoOnBlur(event) {
     var seleccion = event.currentTarget.id;
     switch (seleccion){
@@ -52,3 +54,17 @@ function eventoOnBlur(event) {
         default:
     }
 }
+
+
+function asignarEventoRB(){
+    document.getElementById('animales').onfocus = evento0nFocus
+    document.getElementById('postres').onfocus = evento0nFocus
+    document.getElementById('musica').onfocus = evento0nFocus
+
+    document.getElementById('animales').onblur = evento0nFocus
+    document.getElementById('postres').onblur = evento0nFocus
+    document.getElementById('musica').onblur = evento0nFocus
+
+}
+
+asignarEventoRB()
