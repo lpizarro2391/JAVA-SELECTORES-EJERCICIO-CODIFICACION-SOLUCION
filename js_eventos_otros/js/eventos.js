@@ -27,7 +27,7 @@ function eventoOnFocus(event) {
             $(document).ready(function () { $('select').material_select() })
             break
         case "postres":
-            document.getElementById('sel_postres').disable = false
+            document.getElementById('sel_postres').disable = false;
             $(document).ready(function () { $('select').material_select() })
             break
         case "musica":
@@ -47,7 +47,7 @@ function eventoOnBlur(event) {
             $(document).ready(function () { $('select').material_select() })
             break
         case "postres":
-            document.getElementById('sel_postres').disable = true
+            document.getElementById('sel_postres').disable = true;
             $(document).ready(function () { $('select').material_select() })
             break
         case "musica":
@@ -60,13 +60,13 @@ function eventoOnBlur(event) {
 
 
 function asignarEventoRB() {
-    document.getElementById('animales').onfocus = evento0nFocus
-    document.getElementById('postres').onfocus = evento0nFocus
-    document.getElementById('musica').onfocus = evento0nFocus
+    document.getElementById('animales').onfocus = eventoOnFocus
+    document.getElementById('postres').onfocus = eventoOnFocus
+    document.getElementById('musica').onfocus = eventoOnFocus
 
-    document.getElementById('animales').onblur = evento0nFocus
-    document.getElementById('postres').onblur = evento0nFocus
-    document.getElementById('musica').onblur = evento0nFocus
+    document.getElementById('animales').onblur = eventoOnBlur
+    document.getElementById('postres').onblur = eventoOnBlur
+    document.getElementById('musica').onblur = eventoOnBlur
 
 }
 
